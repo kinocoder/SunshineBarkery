@@ -5,7 +5,9 @@
 package Controller;
 
 import DAO.CustomerDAO;
+import DAO.ManagerDAO;
 import Model.Customer;
+import Model.Manager;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -13,6 +15,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 /**
  *
@@ -38,14 +41,27 @@ public class loginController extends HttpServlet {
         /**
          * out.println(email+": "+password);
          *///kiểm tra 
-        CustomerDAO cdao = new CustomerDAO();
+        CustomerDAO  cdao = new CustomerDAO();
+        ManagerDAO mdao = new ManagerDAO();
+        
+        HttpSession session = request.getSession();
+        
         String error = "";
+        
         try {
             if (!email.isEmpty() && !password.isEmpty()) {
                 Customer c = new Customer(email, password);
-                if (cdao.login(c)) {
-                    response.sendRedirect("/home");
-                } else {
+                Manager m = new Manager(email, password);
+                
+                if (cdao.login(c)) {//kiểm tra xem tài khoản đang là khách hay admin
+                    
+                    //Đẩy customer lên sesion
+                    session.setAttribute("customer", c);
+                    response.sendRedirect("/Test/Home");
+                }else if(mdao.login(m)){
+                    session.setAttribute("manager", m);
+                    response.sendRedirect("/Test/Home");
+                }else {
                     out.println("Tài khoản mật khẩu không chính xác");
                 }
             } else {

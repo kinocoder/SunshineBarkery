@@ -11,7 +11,7 @@ import java.sql.SQLException;
 public class Database {
     private static final String DB_USER = "sa"; // Database username
     private static final String DB_PASS = "123456"; // Database password
-    private static final String DB_URL = "jdbc:sqlserver://localhost:1433;databaseName=testDB;encrypt=true;trustServerCertificate=true";
+    private static final String DB_URL = "jdbc:sqlserver://localhost:1433;databaseName=SunshineBakery;encrypt=true;trustServerCertificate=true";
 
     /**
      * Establishes a database connection.
