@@ -5,9 +5,13 @@
 package Controller;
 
 import DAO.CustomerDAO;
+<<<<<<< HEAD
 import DAO.ManagerDAO;
 import Model.Customer;
 import Model.Manager;
+=======
+import Model.Customer;
+>>>>>>> origin/KinoDev
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -15,7 +19,10 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+<<<<<<< HEAD
 import jakarta.servlet.http.HttpSession;
+=======
+>>>>>>> origin/KinoDev
 
 /**
  *
@@ -41,6 +48,7 @@ public class loginController extends HttpServlet {
         /**
          * out.println(email+": "+password);
          *///kiểm tra 
+<<<<<<< HEAD
         CustomerDAO  cdao = new CustomerDAO();
         ManagerDAO mdao = new ManagerDAO();
         
@@ -62,6 +70,16 @@ public class loginController extends HttpServlet {
                     session.setAttribute("manager", m);
                     response.sendRedirect("/Test/back-end/index.jsp");
                 }else {
+=======
+        CustomerDAO cdao = new CustomerDAO();
+        String error = "";
+        try {
+            if (!email.isEmpty() && !password.isEmpty()) {
+                Customer c = new Customer(email, password);
+                if (cdao.login(c)) {
+                    response.sendRedirect("/home");
+                } else {
+>>>>>>> origin/KinoDev
                     out.println("Tài khoản mật khẩu không chính xác");
                 }
             } else {
