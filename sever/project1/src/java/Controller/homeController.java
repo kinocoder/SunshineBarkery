@@ -30,7 +30,7 @@ public class homeController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         
-       request.getRequestDispatcher("product/index-2.jsp").forward(request, response);
+       request.getRequestDispatcher("front-end/product/index-2.jsp").forward(request, response);
        
     } 
 
