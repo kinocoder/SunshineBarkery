@@ -60,7 +60,7 @@ public class loginController extends HttpServlet {
                     response.sendRedirect("/Test/Home");
                 }else if(mdao.login(m)){
                     session.setAttribute("manager", m);
-                    response.sendRedirect("/Test/Home");
+                    response.sendRedirect("/Test/back-end/index.jsp");
                 }else {
                     out.println("Tài khoản mật khẩu không chính xác");
                 }

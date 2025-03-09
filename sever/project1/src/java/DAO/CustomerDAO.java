@@ -13,11 +13,11 @@ import java.sql.SQLException;
 public class CustomerDAO {
 
     public boolean login(Customer c) {
-    String sql = "SELECT * FROM Customer WHERE CusName = ? AND CusPassword = ?";
+    String sql = "SELECT * FROM Customer WHERE cusEmail = ? AND cusPassword = ?";
     try (Connection conn = Database.connectDB();
          PreparedStatement stmt = conn.prepareStatement(sql)) {
          
-        stmt.setString(1, c.getCusName());  // Lấy username từ đối tượng Customer
+        stmt.setString(1, c.getCusEmail());  // Lấy username từ đối tượng Customer
         stmt.setString(2, c.getCusPassword()); // Lấy password từ đối tượng Customer
         ResultSet rs = stmt.executeQuery();
         

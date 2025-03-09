@@ -21,8 +21,8 @@ public class ManagerDAO {
     try (Connection conn = Database.connectDB();
          PreparedStatement stmt = conn.prepareStatement(sql)) {
          
-        stmt.setString(1, m.getmEmail());  // Lấy username từ đối tượng Customer
-        stmt.setString(2, m.getmPassword()); // Lấy password từ đối tượng Customer
+        stmt.setString(1, m.getmEmail());  // Lấy username từ đối tượng Manager
+        stmt.setString(2, m.getmPassword()); // Lấy password từ đối tượng Manager
         ResultSet rs = stmt.executeQuery();
         
         return rs.next(); // Nếu có kết quả thì đăng nhập thành công

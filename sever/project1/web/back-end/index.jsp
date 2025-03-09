@@ -10,8 +10,8 @@
     <meta name="keywords"
         content="admin template, Fastkart admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="${pageContext.request.contextPath}/access/backendAssets/images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="${pageContext.request.contextPath}/access/backendAssets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="${pageContext.request.contextPath}/back-end/backendAssets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/back-end/backendAssets/images/favicon.png" type="image/x-icon">
     <title>Fastkart - Dashboard</title>
 
     <!-- Google font-->
@@ -20,38 +20,38 @@
         rel="stylesheet">
 
     <!-- Linear Icon css -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/access/backendAssets/css/linearicon.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/back-end/backendAssets/css/linearicon.css">
 
     <!-- fontawesome css -->
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/access/backendAssets/css/vendors/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/back-end/backendAssets/css/vendors/font-awesome.css">
 
     <!-- Themify icon css-->
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/access/backendAssets/css/vendors/themify.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/back-end/backendAssets/css/vendors/themify.css">
 
     <!-- ratio css -->
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/access/backendAssets/css/ratio.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/back-end/backendAssets/css/ratio.css">
 
     <!-- remixicon css -->
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/access/backendAssets/css/remixicon.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/back-end/backendAssets/css/remixicon.css">
 
     <!-- Feather icon css-->
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/access/backendAssets/css/vendors/feather-icon.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/back-end/backendAssets/css/vendors/feather-icon.css">
 
     <!-- Plugins css -->
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/access/backendAssets/css/vendors/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/access/backendAssets/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/back-end/backendAssets/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/back-end/backendAssets/css/vendors/animate.css">
 
     <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/access/backendAssets/css/vendors/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/back-end/backendAssets/css/vendors/bootstrap.css">
 
     <!-- vector map css -->
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/access/backendAssets/css/vector-map.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/back-end/backendAssets/css/vector-map.css">
 
     <!-- Slick Slider Css -->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/access/backendAssets/css/vendors/slick.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/back-end/backendAssets/css/vendors/slick.css">
 
     <!-- App css -->
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/access/backendAssets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/back-end/backendAssets/css/style.css">
 </head>
 
 <body>
